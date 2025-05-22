@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea, #26c6da, #00acc1);
+  overflow: hidden;
+  color: #333;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+
+.column {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.butterfly {
+  background: linear-gradient(180deg, #fff3e0, #ffcc80);
+  color: #4e342e;
+  text-shadow: 0 0 5px #b97448;
+}
+
+.moth {
+  background: linear-gradient(180deg, #37474f, #263238);
+  color: #cfd8dc;
+  text-shadow: 0 0 5px #78909c;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+.intense-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.faded-text {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* Sol y luna en esquinas opuestas */
+.sun {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at center, #fff176 40%, #fbc02d 90%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fbc02d;
+  z-index: 20;
+}
+
+.moon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle at center, #cfd8dc 40%, #90a4ae 90%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px #90a4ae;
+  filter: drop-shadow(0 0 3px #78909c);
+  z-index: 20;
+}
+
+/* Imágenes voladoras (mariposa y polilla) */
+.winged {
+  position: fixed;
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  z-index: 100;
+  transition: transform 0.3s ease-out;
+}
+
+/* Contenedor música */
+.music-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 320px;
+  height: 50px;
+  z-index: 200;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* iframe para música con tamaño adecuado */
+.music-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#playMusicBtn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 117, 252, 0.5);
+  transition: background 0.3s ease;
+}
+
+#playMusicBtn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}

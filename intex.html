@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mariposas y Polillas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="column moth">
+      <div class="moon"></div>
+      <h2>Polillas</h2>
+      <p class="faded-text">
+        Las polillas buscan la luna, sombras que acarician la noche,<br />
+        con sus alas apagadas, guardianas del silencio y el misterio.
+      </p>
+    </section>
+
+    <section class="column butterfly">
+      <div class="sun"></div>
+      <h2>Mariposas</h2>
+      <p class="intense-text">
+        Las mariposas viven de día, iluminadas por la gloria del sol, <br />
+        con colores intensos que desafían la luz y el tiempo.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- Imágenes voladoras fuera del container para que se muevan por toda la pantalla -->
+  <img src="images/mariposa.png" alt="Mariposa" id="butterfly" class="winged" />
+  <img src="images/polilla.png" alt="Polilla" id="moth" class="winged" />
+
+  <!-- Música YouTube embed -->
+  <div class="music-container">
+    <iframe id="ytplayer" 
+      src="https://www.youtube.com/embed/JUPoUnqDArk" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen
+      title="Musica tranquila"
+    ></iframe>
+  </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
